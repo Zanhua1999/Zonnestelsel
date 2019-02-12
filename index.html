@@ -1,0 +1,73 @@
+<!DOCTYPE html&gt;
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>A-Frame创建场景</title>
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <!--
+            a-scene是全局根对象，是存放所有实体的容器
+        -->
+        <a-scene>
+
+            <!--为了更好地显示实体，我们添加个蓝色的天空-->
+            <a-sky color="#ddf"></a-sky>
+
+            <a-sphere position="2 2 2" rotation="0 0 0" color="orange" radius='3'></a-sphere>   <!--Sun-->
+
+            <a-ring color="white" radius-inner="4" radius-outer="4.02" position='2 2 2'  rotation='0 58 0'></a-ring>
+<a-sphere position="2 6.01 2" rotation="0 0 0" color="#d6d6c2" radius="0.1"></a-sphere> <!--Mercury-->
+
+  <a-ring color="white" radius-inner="5" radius-outer="5.02" position='2 2 2' rotation='0 62 0'></a-ring>
+  <a-sphere position="2 7.01 2" rotation="0 0 0" color="#996600" radius="0.2"></a-sphere> <!--Venus-->
+
+  <a-ring color="white" radius-inner="6" radius-outer="6.02" position='2 2 2' rotation='0 70 0'></a-ring>
+    <a-sphere position="2 8.01 2" rotation="0 0 0" color="blue" radius="0.2"></a-sphere> <!--Earth-->
+    <a-sphere position="2 8.5 2" rotation="0 0 0" color="#ebebe0" radius="0.06"></a-sphere> <!--Moon-->
+
+      <a-ring color="white" radius-inner="11" radius-outer="11.02" position='2 2 2' rotation='0 60 0'></a-ring>
+      <a-sphere position="2 13.03 2" rotation="0 0 0" color="#86592d" radius="0.6"></a-sphere> <!--Jupiter-->
+
+      <a-ring color="white" radius-inner="15" radius-outer="15.02" position='2 2 2' rotation='0 60 0'></a-ring>
+      <a-sphere position="2 17.03 2" rotation="0 0 0" color="#999966" radius="0.5"></a-sphere> <!--Saturn-->
+        <a-ring color="white" radius-inner="0.8" radius-outer="1.2" position='2 17.03 2' rotation='0 72 0'></a-ring>
+
+        <a-ring color="white" radius-inner="18" radius-outer="18.02" position='2 2 2' rotation='0 66 0'></a-ring>
+        <a-sphere position="2 20.03 2" rotation="0 0 0" color="#94b8b8" radius="0.4"></a-sphere> <!--Uranus-->
+
+        <a-ring color="white" radius-inner="21" radius-outer="21.02" position='2 2 2' rotation='0 70 0'></a-ring>
+        <a-sphere position="2 23.03 2" rotation="0 0 0" color="#0033cc" radius="0.4">
+        </a-sphere> <!--Uranus-->
+
+
+
+
+
+
+
+
+
+            <a-camera
+              position="0 0 30"
+              cursor-visible="true"
+              cursor-scale="2"
+              cursor-color="#0095DD"
+              cursor-opacity="0.5">
+            </a-camera>
+
+            <a-light
+  type="directional"
+  color="#FFF"
+  intensity="0.5"
+  position="-1 1 2">
+</a-light>
+<a-light
+  type="ambient"
+  color="#FFF">
+</a-light>
+        </a-scene>
+
+
+    </body>
+</html>
